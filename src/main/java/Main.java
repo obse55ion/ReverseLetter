@@ -6,11 +6,11 @@ public class Main {
         int right = chars.length - 1;
 
         while (left < right) {
-            if(!Character.isLetter(chars[left])) {
+            if (!Character.isLetter(chars[left])) {
                 left++;
-            }else  if(!Character.isLetter(chars[right])) {
+            } else if (!Character.isLetter(chars[right])) {
                 right--;
-            }else {
+            } else {
                 char tmp = chars[left];
                 chars[left] = chars[right];
                 chars[right] = tmp;
