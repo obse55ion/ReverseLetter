@@ -1,6 +1,6 @@
-public class Main {
+public class ReverseLetter {
 
-    public static String ReverseLetter(String s) {
+    public static String reverseLetter(String s) {
         char[] chars = s.toCharArray();
         int left = 0;
         int right = chars.length - 1;
@@ -22,6 +22,6 @@ public class Main {
     }
 
     static void main() {
-        System.out.println(ReverseLetter("J@va the be$t!123"));
+        System.out.println(reverseLetter("J@va the be$t!123"));
     }
 }
