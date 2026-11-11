@@ -11,37 +11,37 @@ class ReverseLetterTest {
     }
 
     @Test
-    void emptyString() {
+    void reverse_WhenEmptyString() {
         assertEquals("", ReverseLetter.reverseLetter(""));
     }
 
     @Test
-    void singleLetterInString() {
+    void reverse_WhenSingleLetterInString() {
         assertEquals("a", ReverseLetter.reverseLetter("a"));
     }
 
     @Test
-    void noLetterInString() {
+    void reverse_WhenNoLetterInString() {
         assertEquals("123 !@#", ReverseLetter.reverseLetter("123 !@#"));
     }
 
     @Test
-    void OnlyLetterInString() {
+    void reverse_WhenOnlyLetterInString() {
         assertEquals("abcd", ReverseLetter.reverseLetter("dcba"));
     }
 
     @Test
-    void noLetterOnSidesInString() {
+    void reverse_WhenNoLetterOnSidesInString() {
         assertEquals("$dc2ba@", ReverseLetter.reverseLetter("$ab2cd@"));
     }
 
     @Test
-    void letterTravelWithRegister() {
+    void reverse_letterTravelWithRegister() {
         assertEquals("RevERseLettER", ReverseLetter.reverseLetter("REtteLesREveR"));
     }
 
     @Test
-    void nullInputInMethod() {
+    void shouldThrowNpe_whenInputIsNull() {
         assertEquals(null, ReverseLetter.reverseLetter(null));
     }
 
