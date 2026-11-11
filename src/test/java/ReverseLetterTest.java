@@ -4,10 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ReverseLetterTest {
 
-    private final ReverseLetter reverseLetter = new ReverseLetter();
-
     @Test
-    void reverseLetter() {
+    void reverseOnlyLetters() {
         String result = ReverseLetter.reverseLetter("J@va the be$t!123");
         assertEquals("t@eb eht av$J!123", result);
     }
@@ -28,12 +26,12 @@ class ReverseLetterTest {
     }
 
     @Test
-    void oneLetter() {
+    void OnlyLetterInString() {
         assertEquals("abcd", ReverseLetter.reverseLetter("dcba"));
     }
 
     @Test
-    void noLetterAround() {
+    void noLetterOnSidesInString() {
         assertEquals("$dc2ba@", ReverseLetter.reverseLetter("$ab2cd@"));
     }
 
@@ -43,7 +41,7 @@ class ReverseLetterTest {
     }
 
     @Test
-    void NullInput() {
+    void nullInputInMethod() {
         assertEquals(null, ReverseLetter.reverseLetter(null));
     }
 
