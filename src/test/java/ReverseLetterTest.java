@@ -38,7 +38,7 @@ class ReverseLetterTest {
     }
 
     @Test
-    void letterTravelWithRegister(){
+    void letterTravelWithRegister() {
         assertEquals("RevERseLettER", ReverseLetter.reverseLetter("REtteLesREveR"));
     }
 
