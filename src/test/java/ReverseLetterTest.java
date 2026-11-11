@@ -36,12 +36,12 @@ class ReverseLetterTest {
     }
 
     @Test
-    void reverse_letterTravelWithRegister() {
+    void reverse_LetterTravelWithRegister() {
         assertEquals("RevERseLettER", ReverseLetter.reverseLetter("REtteLesREveR"));
     }
 
     @Test
-    void shouldThrowNpe_whenInputIsNull() {
+    void shouldThrowNpe_WhenInputIsNull() {
         assertEquals(null, ReverseLetter.reverseLetter(null));
     }
 
